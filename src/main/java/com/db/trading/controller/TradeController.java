@@ -33,13 +33,6 @@ public class TradeController {
  		return tradingService.addTrade(tradeData);
  	}
  	
- 	@PostMapping("/test12")
- 	public ResponseEntity updateExpiryFlagOfTrade(){
- 	
- 		tradingService.updateExpiryFlagOfTrade();
- 		return ResponseEntity.ok(HttpStatus.OK);
- 	}
- 	
  	
  	
  	@GetMapping("/trades")
