@@ -16,7 +16,9 @@ There are couples of validation, we need to provide in the above assignment
 
 # Solution
 1.  Store the data in h2 (in memory database).
+ 
  Created Following rest end points
+ 
  1. One for Saving. Following criteria used for saving
      A. For saving trade record in Trade DB
         Following Validation added while saving record
