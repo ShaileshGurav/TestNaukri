@@ -15,20 +15,19 @@ There are couples of validation, we need to provide in the above assignment
 3.	Store should automatically update the expire flag if in a store the trade crosses the maturity date.
 
 # Solution
-1.  Store the data in h2 (in memory database).
- 
+
+Store the data in h2 (in memory database).
  Created Following rest end points
- 
  1. One for Saving. Following criteria used for saving
-     A. For saving trade record in Trade DB
-        Following Validation added while saving record
-        1. If MaturityDate < today date then throw an Error Inccorect Maturity Date
-        2. If Version < Existing version then throw an Error Incorrect Version
-     B. If Trade is exist then check version no
-         1. If version matches then update same reccord
-         2. If Version  > existing version then add new record
-     C.  If TradeId does not exist then add new record
- 2    To Fecth all records
+      - For saving trade record in Trade DB
+       - Following Validation added while saving record
+         - If MaturityDate < today date then throw an Error Inccorect Maturity Date
+       -  If Trade is exist then check version no
+          - If version matches then update same reccord
+          - If Version  > existing version then add new record
+          - If TradeId does not exist then add new record
+          
+ 2. To Fecth all records
  
  3. Schedular is written to update expiry to Y if maturityDt is already crossed
    
